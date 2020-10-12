@@ -1,0 +1,108 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jsTree test</title>
+  <!-- 2 load the theme CSS file -->
+  <link rel="stylesheet" href="../dist/themes/default/style.min.css" />
+  <script src="https://kit.fontawesome.com/82d4ece84c.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+       li {
+            font-weight:bold;
+            color:black;
+        }
+      .snow{
+         color:black;
+      }
+    </style>
+
+</head>
+<body>
+ <i class="far fa-file-archive snow"></i> <span class="snow">SIARD</span>
+  <!-- 3 setup a container element -->
+  <div id="jstree">
+
+    <!-- in this example the tree is populated from inline HTML -->
+    <ul>
+
+      <li data-jstree='{"icon":"far fa-folder","opened":true}'>header
+        <ul>
+          <li data-jstree='{"icon":"far fa-folder"}'>siardversion
+            <ul>
+              <li data-jstree='{"icon":"far fa-folder"}'>2.1</li>
+            </ul>
+          </li>
+          <li data-jstree='{"icon":"far fa-file-code"}'>metadata.xml</li>
+          <li data-jstree='{"icon":"far fa-file-code"}'>metadata.xsd</li>
+          <li data-jstree='{"icon":"far fa-file-code"}'>table.xsd</li>
+        </ul>
+      </li>
+      <li data-jstree='{"icon":"far fa-folder","opened":true}'>content
+        <ul>
+          <li data-jstree='{"icon":"far fa-folder","opened":true}'>schema0
+            <ul>
+              <li data-jstree='{"icon":"far fa-folder","opened":true}'>table0
+                <ul>
+                  <li data-jstree='{"icon":"far fa-file-code"}'>table0.xml</li>
+                  <li data-jstree='{"icon":"far fa-file-code"}'>table0.xsd</li>
+                </ul>
+              </li>
+
+            </ul>
+                  <ul>
+              <li data-jstree='{"icon":"far fa-folder"}'>table1
+                <ul>
+                  <li data-jstree='{"icon":"far fa-folder"}'>lob7
+                  <ul>
+                    <li data-jstree='{"icon":"far fa-file-alt"}'>record0.txt</li>
+                    <li data-jstree='{"icon":"far fa-file-alt"}'>record1.txt</li>
+                    <li data-jstree='{"icon":"far fa-file-alt"}'>record2.txt</li>
+                    <li data-jstree='{"icon":"far fa-file-alt"}'>record3.txt</li>
+                    <li data-jstree='{"icon":"far fa-file-alt"}'>record4.txt</li>
+
+                  </ul>
+                  </li>
+                  <li data-jstree='{"icon":"far fa-file-code"}'>table1.xml</li>
+                  <li data-jstree='{"icon":"far fa-file-code"}'>table1.xsd</li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+
+
+ <!-- 4 include the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+  <!-- 5 include the minified jstree source -->
+  <script src="../dist/jstree.js"></script>
+  <script>
+  $(function () {
+    // 6 create an instance when the DOM is ready
+    $('#jstree').jstree();
+    // 7 bind to events triggered on the tree
+    $('#jstree').on("changed.jstree", function (e, data) {
+      console.log(data.selected);
+    });
+    // 8 interact with the tree - either way is OK
+    $('button').on('click', function () {
+      $('#jstree').jstree(true).select_node('child_node_1');
+      $('#jstree').jstree('select_node', 'child_node_1');
+      $.jstree.reference('#jstree').select_node('child_node_1');
+    });
+  });
+  </script>
+
+</body>
+</html>
+ </title>
+</head>
+<body>
+
+</body>
+</html>

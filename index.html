@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="../dist/reset.css">
+    <link rel="stylesheet" href="../dist/reveal.css">
+    <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="../dist/themes/default/style.css"/>
+	 <script src="https://kit.fontawesome.com/82d4ece84c.js" crossorigin="anonymous"></script>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../plugin/highlight/zenburn.css" id="highlight-theme">
+<style>
+
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+		<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>SIARD</h2>
+					<p>En översikt </p>
+			<p><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i></p>
+			<p style="font-size: 10pt">Andreas Segerberg </p>
+			<p><a href="https://twitter.com/asegerberg"><i class="fab fa-twitter"></i></a></p>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+
+							<img src="../assets/siard.svg" alt="siard diagram" style="height: 300px; margin: 0 auto 4rem auto; background:transparent;" class="demo-logo">
+
+
+					<h2 style="margin-top: 20px;">SIARD</h2>
+
+
+				</section>
+
+        <section data-auto-animate>
+			<div class="container">
+				<div class="col">    <h2 style="margin-top: 20px;">SIARD</h2>
+			<p>Vad finns i paketet?</p>
+				<p><i class="fas fa-database"></i> <i class="fas fa-arrow-circle-right"></i> <i class="fas fa-archive"></i></p>
+				</div>
+				<div class="col"><iframe src="siard_tree.html" height="500px" width="100%" scrolling="no"></iframe></div>
+
+            </p>
+			</div>
+
+
+        </section>
+        <section data-auto-animate>
+            <h3 data-id="code-title">metadata.xml</h3>
+            <pre data-id="code-animation" style="font-size: 10pt">
+					<code class="xml" data-trim data-line-numbers="2|3|4|5|6|7-10|12|15-28" tabReplace="  "><script type="text/template">
+
+					<siardarchive>
+						<dbname>Sakila</dbname>
+						<description>Cirkusmyndighetens ekonomisystem ECHO</description>
+						<archiver>Andreas Segerberg</archiver>
+						<archiverContact>andreas.segerberg@essolutions.se</archiverContact>
+						<dataOwner>Cirkusmyndigheten</dataOwner>
+						<dataOriginTimespan>1999 2007</dataOriginTimespan>
+						<lobFolder/>
+
+						<producerApplication>SiardFromDb 2.1.120 Swiss Federal Archivees...</producerApplication>
+						<archivalDate>2020-10-14Z</archivalDate>
+						<messageDigest>
+						<digestType>MD5</digestType>
+						<digest>9D1FA495141A984C2D7A00404A071370</digest>
+						</messageDigest>
+						<clientMachine>VMW10.enterag.ch</clientMachine>
+						<databaseProduct>MySQL 5.6.34-log</databaseProduct>
+						<connection>jdbc:mysql://localhost:3306/sakila</connection>
+						<databaseUser>andreas@localhost</databaseUser>
+						<schemas>
+							<schema>
+								<tables>
+									<table>
+										<columns>
+											<column/>
+										</columns>
+									</table>
+								</tables>
+								<views/>
+								<routines/>
+								<users/>
+							</schema>
+						</schemas>
+					</siardarchive>
+					</script>
+					</code>
+			</pre>
+        </section>
+		        <section data-auto-animate>
+            <h3 data-id="code-title">metadata.xml</h3>
+            <pre data-id="code-animation" style="font-size: 10pt">
+				<code class="xml" data-trim data-line-numbers="3-4,2,22">
+					<script type="text/template">
+						<schemas>
+							<schema>
+								<name>sakila</name>
+								<folder>schema0</folder>
+								<tables>
+									<table>
+										...
+										...
+									</table>
+									...
+									...
+								</tables>
+								<routines>
+								...
+								</routines>
+								<users>
+								...
+								</users>
+								<views>
+								...
+								</views>
+							</schema>
+							...
+							...
+					</script>
+				</code>
+			</pre>
+        </section>
+		<section data-auto-animate>
+            <h3 data-id="code-title">metadata.xml</h3>
+            <pre data-id="code-animation" style="font-size: 10pt">
+				<code class="xml" data-trim data-line-numbers="2-4|5-12|28-31|33-43|45">
+					<script type="text/template">
+					<table>
+						<name>actor</name>
+						<folder>table0</folder>
+						<description>The actor table lists information for all actors.</description>
+						<columns>
+							<column>
+								<name>actor_id</name>
+								<type>INTEGER</type>
+								<typeOriginal>smallint unsigned</typeOriginal>
+								<nullable>false</nullable>
+								<description>A surrogate primary key used to uniquely ide....</description>
+							</column>
+							<column>
+								<name>first_name</name>
+								<type>VARCHAR(45)</type>
+								<typeOriginal>varchar</typeOriginal>
+								<nullable>false</nullable>
+								<description>The actor's first name.</description>
+							</column>
+							<column>
+								<name>last_name</name>
+								<type>VARCHAR(45)</type>
+								<typeOriginal>varchar</typeOriginal>
+								<nullable>false</nullable>
+								<description>The actor's last name.</description>
+							</column>
+						</columns>
+						<primaryKey>
+							<name>PRIMARY</name>
+							<column>actor_id</column>
+						</primaryKey>
+						<foreignKeys>
+							<foreignKey>
+								<name>fk_city_country</name>
+								<referencedSchema>sakila</referencedSchema>
+								<referencedTable>country</referencedTable>
+								<reference>
+									<column>country_id</column>
+									<referenced>country_id</referenced>
+								</reference>
+								<deleteAction>RESTRICT</deleteAction>
+								<updateAction>CASCADE</updateAction>
+							</foreignKey>
+						</foreignKeys>
+						<rows>200</rows>
+					</table>
+					</script>
+				</code>
+			</pre>
+        </section>
+				<section data-auto-animate>
+            <h3 data-id="code-title">metadata.xml</h3>
+            <pre data-id="code-animation" style="font-size: 10pt">
+				<code class="xml" data-trim data-line-numbers="">
+					<script type="text/template">
+					<views>
+					<query>SELECT A.username, B.role_description FROM UsersTabel A INNER JOIN UserRolesTable B ON A.user_role_id = B.user_role_id</query>
+					<queryOriginal>SELECT A.username, B.role_description FROM UsersTabel A INNER JOIN UserRolesTable B ON A.user_role_id = B.user_role_id</queryOriginal>
+					</views>
+					</script>
+				</code>
+			</pre>
+        </section>
+		<section data-auto-animate>
+            <h3 data-id="code-title">table[x].xml</h3>
+            <pre data-id="code-animation" style="font-size: 10pt">
+				<code class="xml" data-trim data-line-numbers="2-11">
+					<script type="text/template">
+						<table>
+							<row>
+								<c1>1</c1>
+								<c2>47 MySakila Drive</c2>
+								<c4>Alberta</c4>
+								<c5>300</c5>
+								<c6/>
+								<c7/>
+								<c8 digest="FE2F5197558A096B813BC6135CFABE82" digestType="MD5" file="content/schema0/table1/lob7/record0.txt" length="39"/>
+								<c9>2014-09-25T20:30:27Z</c9>
+							</row>
+							<row>
+								<c1>2</c1>
+								<c2>28 MySQL Boulevard</c2>
+								<c4>QLD</c4>
+								<c5>576</c5>
+								<c6/>
+								<c7/>
+								<c8 digest="2CAE074F7B7E2EA7036F012F9C5728CF" digestType="MD5" file="content/schema0/table1/lob7/record1.txt" length="36"/>
+								<c9>2014-09-25T20:30:09Z</c9>
+							</row>
+							<row>
+								<c1>3</c1>
+								<c2>23 Workhaven Lane</c2>
+								<c4>Alberta</c4>
+								<c5>300</c5>
+								<c6/>
+								<c7>14033335568</c7>
+								<c8 digest="75394400174AC2893D1D789C2CDEA369" digestType="MD5" file="content/schema0/table1/lob7/record2.txt" length="31"/>
+								<c9>2014-09-25T20:30:27Z</c9>
+							</row>
+							<row>
+								<c1>4</c1>
+								<c2>1411 Lillydale Drive</c2>
+								<c4>QLD</c4>
+								<c5>576</c5>
+								<c6/>
+								<c7>6172235589</c7>
+								<c8 digest="FC82CFEF407B832498DF55C151A1782B" digestType="MD5" file="content/schema0/table1/lob7/record3.txt" length="31"/>
+								<c9>2014-09-25T20:30:09Z</c9>
+							</row>
+						</table>
+					</script>
+				</code>
+			</pre>
+        </section>
+		<section data-auto-animate>
+
+			<h2>Verktyg</h2>
+			<p><i class="fas fa-wrench"></i> <i class="fas fa-hammer"></i> <i class="fas fa-screwdriver"></i></p>
+
+		</section>
+				<section data-auto-animate>
+					<p><i class="fas fa-wrench"></i> <i class="fas fa-hammer"></i> <i class="fas fa-screwdriver"></i></p>
+					<h2>Verktyg</h2>
+					<p class="fragment fade-down">
+						Siard Suite
+					</p>
+						<p class="fragment fade-down">
+						DBPTK
+						</p>
+					<p class="fragment fade-down">
+						KOST-Val
+					</p>
+						<p class="fragment fade-down">
+						SIARD2SQLITE
+						</p>
+		</section>
+				</section>
+				<section data-auto-animate>
+					<img src="../assets/Coat_of_Arms_of_Switzerland_(Pantone).svg" height="10%" width="10%">
+					<h2>Siard Suite</h2>
+					<p class="fragment fade-down">
+					</p>
+						<p class="fragment fade-down">
+						</p>
+		</section>
+    </div>
+</div>
+<script src="../dist/reveal.js"></script>
+<script src="../plugin/notes/notes.js"></script>
+<script src="../plugin/markdown/markdown.js"></script>
+<script src="../plugin/highlight/highlight.js"></script>
+<script src="../dist/jstree.js"></script>
+
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+        backgroundTransition: 'zoom',
+
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+
+</body>
+</html>
