@@ -10,56 +10,63 @@
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/white.css" id="theme">
     <link rel="stylesheet" href="dist/themes/default/style.css"/>
-	 <script src="https://kit.fontawesome.com/82d4ece84c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/82d4ece84c.js" crossorigin="anonymous"></script>
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/zenburn.css" id="highlight-theme">
-<style>
+    <style>
 
-.container{
-    display: flex;
-}
-.col{
-    flex: 1;
-}
-</style>
+        .container {
+            display: flex;
+        }
+        .col {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
 <div class="reveal">
     <div class="slides">
-		<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-					<h2>SIARD</h2>
-					<p>En översikt </p>
-			<p><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i></p>
-			<p style="font-size: 10pt">Andreas Segerberg </p>
-			<p><a href="https://twitter.com/asegerberg"><i class="fab fa-twitter"></i></a></p>
-				</section>
-				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+        <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+            <h2>SIARD</h2>
+            <p>En översikt </p>
+            <p><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i
+                    class="fab fa-creative-commons-sa"></i></p>
+            <p style="font-size: 10pt">Andreas Segerberg </p>
+            <p><a href="https://twitter.com/asegerberg"><i class="fab fa-twitter"></i></a></p>
+        </section>
+        <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
 
-							<img src="../assets/siard.svg" alt="siard diagram" style="height: 300px; margin: 0 auto 4rem auto; background:transparent;" class="demo-logo">
+            <img src="assets/siard.svg" alt="siard diagram"
+                 style="height: 300px; margin: 0 auto 4rem auto; background:transparent;" class="demo-logo">
 
 
-					<h2 style="margin-top: 20px;">SIARD</h2>
+            <h2 style="margin-top: 20px;">SIARD</h2>
 
 
-				</section>
+        </section>
 
         <section data-auto-animate>
-			<div class="container">
-				<div class="col">    <h2 style="margin-top: 20px;">SIARD</h2>
-			<p>Vad finns i paketet?</p>
-				<p><i class="fas fa-database"></i> <i class="fas fa-arrow-circle-right"></i> <i class="fas fa-archive"></i></p>
-				</div>
-				<div class="col"><iframe src="siard_tree.html" height="500px" width="100%" scrolling="no"></iframe></div>
+            <h2 style="margin-top: 20px;">SIARD</h2>
+            <div class="container">
+                <div class="col">
+                    <p>Vad finns i paketet?</p>
+                    <p><i class="fas fa-database"></i> <i class="fas fa-arrow-circle-right"></i> <i
+                            class="fas fa-archive"></i></p>
+                </div>
+                <div class="col">
+                    <iframe src="siard_tree.html" height="500px" width="100%" scrolling="no"></iframe>
+                </div>
 
-            </p>
-			</div>
+                </p>
+            </div>
 
 
         </section>
         <section data-auto-animate>
             <h3 data-id="code-title">metadata.xml</h3>
             <pre data-id="code-animation" style="font-size: 10pt">
-					<code class="xml" data-trim data-line-numbers="2|3|4|5|6|7-10|12|15-28" tabReplace="  "><script type="text/template">
+					<code class="xml" data-trim data-line-numbers="2|3|4|5|6|7|8|9|10|11-14|15|16|17|18"
+                          tabReplace="  "><script type="text/template">
 
 					<siardarchive>
 						<dbname>Sakila</dbname>
@@ -69,7 +76,6 @@
 						<dataOwner>Cirkusmyndigheten</dataOwner>
 						<dataOriginTimespan>1999 2007</dataOriginTimespan>
 						<lobFolder/>
-
 						<producerApplication>SiardFromDb 2.1.120 Swiss Federal Archivees...</producerApplication>
 						<archivalDate>2020-10-14Z</archivalDate>
 						<messageDigest>
@@ -99,7 +105,7 @@
 					</code>
 			</pre>
         </section>
-		        <section data-auto-animate>
+        <section data-auto-animate>
             <h3 data-id="code-title">metadata.xml</h3>
             <pre data-id="code-animation" style="font-size: 10pt">
 				<code class="xml" data-trim data-line-numbers="3-4,2,22">
@@ -132,7 +138,7 @@
 				</code>
 			</pre>
         </section>
-		<section data-auto-animate>
+        <section data-auto-animate>
             <h3 data-id="code-title">metadata.xml</h3>
             <pre data-id="code-animation" style="font-size: 10pt">
 				<code class="xml" data-trim data-line-numbers="2-4|5-12|28-31|33-43|45">
@@ -187,7 +193,7 @@
 				</code>
 			</pre>
         </section>
-				<section data-auto-animate>
+        <section data-auto-animate>
             <h3 data-id="code-title">metadata.xml</h3>
             <pre data-id="code-animation" style="font-size: 10pt">
 				<code class="xml" data-trim data-line-numbers="">
@@ -200,7 +206,7 @@
 				</code>
 			</pre>
         </section>
-		<section data-auto-animate>
+        <section data-auto-animate>
             <h3 data-id="code-title">table[x].xml</h3>
             <pre data-id="code-animation" style="font-size: 10pt">
 				<code class="xml" data-trim data-line-numbers="2-11">
@@ -213,7 +219,8 @@
 								<c5>300</c5>
 								<c6/>
 								<c7/>
-								<c8 digest="FE2F5197558A096B813BC6135CFABE82" digestType="MD5" file="content/schema0/table1/lob7/record0.txt" length="39"/>
+								<c8 digest="FE2F5197558A096B813BC6135CFABE82" digestType="MD5"
+                                    file="content/schema0/table1/lob7/record0.txt" length="39"/>
 								<c9>2014-09-25T20:30:27Z</c9>
 							</row>
 							<row>
@@ -223,7 +230,8 @@
 								<c5>576</c5>
 								<c6/>
 								<c7/>
-								<c8 digest="2CAE074F7B7E2EA7036F012F9C5728CF" digestType="MD5" file="content/schema0/table1/lob7/record1.txt" length="36"/>
+								<c8 digest="2CAE074F7B7E2EA7036F012F9C5728CF" digestType="MD5"
+                                    file="content/schema0/table1/lob7/record1.txt" length="36"/>
 								<c9>2014-09-25T20:30:09Z</c9>
 							</row>
 							<row>
@@ -233,7 +241,8 @@
 								<c5>300</c5>
 								<c6/>
 								<c7>14033335568</c7>
-								<c8 digest="75394400174AC2893D1D789C2CDEA369" digestType="MD5" file="content/schema0/table1/lob7/record2.txt" length="31"/>
+								<c8 digest="75394400174AC2893D1D789C2CDEA369" digestType="MD5"
+                                    file="content/schema0/table1/lob7/record2.txt" length="31"/>
 								<c9>2014-09-25T20:30:27Z</c9>
 							</row>
 							<row>
@@ -243,7 +252,8 @@
 								<c5>576</c5>
 								<c6/>
 								<c7>6172235589</c7>
-								<c8 digest="FC82CFEF407B832498DF55C151A1782B" digestType="MD5" file="content/schema0/table1/lob7/record3.txt" length="31"/>
+								<c8 digest="FC82CFEF407B832498DF55C151A1782B" digestType="MD5"
+                                    file="content/schema0/table1/lob7/record3.txt" length="31"/>
 								<c9>2014-09-25T20:30:09Z</c9>
 							</row>
 						</table>
@@ -251,37 +261,89 @@
 				</code>
 			</pre>
         </section>
-		<section data-auto-animate>
+        <section data-auto-animate>
 
-			<h2>Verktyg</h2>
-			<p><i class="fas fa-wrench"></i> <i class="fas fa-hammer"></i> <i class="fas fa-screwdriver"></i></p>
+            <h2>Verktyg</h2>
+            <p><i class="fas fa-wrench"></i> <i class="fas fa-hammer"></i> <i class="fas fa-screwdriver"></i></p>
 
-		</section>
-				<section data-auto-animate>
-					<p><i class="fas fa-wrench"></i> <i class="fas fa-hammer"></i> <i class="fas fa-screwdriver"></i></p>
-					<h2>Verktyg</h2>
-					<p class="fragment fade-down">
-						Siard Suite
-					</p>
-						<p class="fragment fade-down">
-						DBPTK
-						</p>
-					<p class="fragment fade-down">
-						KOST-Val
-					</p>
-						<p class="fragment fade-down">
-						SIARD2SQLITE
-						</p>
-		</section>
-				</section>
-				<section data-auto-animate>
-					<img src="../assets/Coat_of_Arms_of_Switzerland_(Pantone).svg" height="10%" width="10%">
-					<h2>Siard Suite</h2>
-					<p class="fragment fade-down">
-					</p>
-						<p class="fragment fade-down">
-						</p>
-		</section>
+        </section>
+        <section data-auto-animate>
+            <p><i class="fas fa-wrench"></i> <i class="fas fa-hammer"></i> <i class="fas fa-screwdriver"></i></p>
+            <h2>Verktyg</h2>
+            <p class="fragment fade-down">
+                Siard Suite
+            </p>
+            <p class="fragment fade-down">
+                DBPTK
+            </p>
+            <p class="fragment fade-down">
+                KOST-Val
+            </p>
+            <p class="fragment fade-down">
+                SIARD2SQLITE
+            </p>
+        </section>
+
+        <section data-auto-animate>
+            <img src="assets/Coat_of_Arms_of_Switzerland_(Pantone).svg" height="10%" width="10%">
+            <h2>Siard Suite</h2>
+            <p class="fragment" style="font-size: 10pt"><a
+                    href="https://www.bar.admin.ch/bar/en/home/archiving/tools/siard-suite.html">https://www.bar.admin.ch/bar/en/home/archiving/tools/siard-suite.html</a>
+            </p>
+        </section>
+
+        <section data-background-video="assets/siard_suitex.mp4"
+                 data-background-video-loop data-background-video-muted>
+        </section>
+        <section data-auto-animate>
+            <img src="assets/dbptk.png" width="30%">
+            <p class="fragment" style="font-size: 10pt"><a href="https://database-preservation.com/">https://database-preservation.com/</a>
+            </p>
+
+        </section>
+        <section data-auto-animate>
+            <img src="assets/kostval.png" width="40%">
+            <p class="fragment" style="font-size: 10pt"><a href="https://kost-ceco.ch/cms/kost_val_de.html">https://kost-ceco.ch/cms/kost_val_de.html</a>
+            </p>
+
+        </section>
+        <section data-background-video="assets/kost_valx.mp4"
+                 data-background-video-loop data-background-video-muted>
+        </section>
+
+        <section data-auto-animate>
+            <img src="assets/ess.ico" width="15%">
+            <h2>SIARD2SQLITE</h2>
+            <p class="fragment fade-down" style="font-size: 10pt">
+                <a href="https://github.com/Segerberg/SIARD2SQLITE/releases">https://github.com/Segerberg/SIARD2SQLITE/releases</a>
+            </p>
+        </section>
+        <section data-background-video="assets/siard2sqlitex.mp4"
+                 data-background-video-loop data-background-video-muted>
+        </section>
+
+        <section data-auto-animate>
+
+            <h2>En bra idé?</h2>
+            <img src="assets/idea.gif" width="50%">
+
+
+        </section>
+        <section data-auto-animate>
+            <h2>En bra idé?</h2>
+            <p class="fragment fade-out">Ja när arkivobjektet är en databas </p>
+            <p class="fragment fade-in-then-out">Eller när andra alternativ inte är ett alternativ </p>
+            <p class="fragment fade-in-then-out">Eller som en del av en dubbelstrategi </p>
+        </section>
+        <section data-auto-animate>
+            <h2>Risker?</h2>
+            <p class="fragment">För enkelt</p>
+        </section>
+        <section>
+            <h2>Tack för mig</h2>
+            <img src="assets/handx.gif" width="25%">
+        </section>
+
     </div>
 </div>
 <script src="dist/reveal.js"></script>
